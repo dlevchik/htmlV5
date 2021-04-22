@@ -1,0 +1,26 @@
+.get-theme{
+    background-color: $dark-black;
+    color: $white;
+    padding-top: 58px;
+    padding-bottom: 48px;
+
+    .get-text{
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 300;
+
+        strong{
+            font-weight: 600;
+        }
+    }
+
+    .get-theme-buttons{
+        padding-top: 1px;
+
+        .btn:first-child{
+            margin-right: 19px;
+            margin-top: -1px;
+            padding-bottom: 51px;
+        }
+    }
+}

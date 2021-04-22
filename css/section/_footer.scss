@@ -1,0 +1,41 @@
+.footer{
+    margin-top: -6px;
+    background-color: $dark-black;
+    color: $gray-footer;
+    padding: 50px 0 12px 0;
+
+    .social-links{
+        font-size: 1.25rem;
+        margin-right: -1px;
+        margin-bottom: 5px;
+
+        li:not(:last-child){
+            margin-right: 35px;
+        }
+
+        li.dribble{
+            margin-right: 32px;
+        }
+
+        li.behance{
+            margin-right: 32px;
+            margin-top: 2px;
+            font-size: 1.125rem;
+        }
+
+        li a{
+            transition: color .15s;
+
+            &:hover{
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyright{
+        font-size: 0.875rem;
+        line-height: 3rem;
+        font-weight: 600;
+    }
+}

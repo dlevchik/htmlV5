@@ -1,0 +1,98 @@
+@media screen and (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .home {
+        position: relative;
+
+        .home-info{
+            z-index: 2;
+        }
+
+        .devices{
+            position: absolute;
+            right: 30px;
+            bottom: -100px;
+            opacity: .8;
+        }   
+    }
+}
+
+@media screen and (max-width: 991px){
+    header.navbar{
+        &.navbar-dark .navbar-nav a.nav-item.nav-link{
+            margin: 0;
+        }
+    }
+
+    .every-device {
+        padding: 30px 0;
+        .every-device-info{
+            margin: 0;
+        }
+    }
+
+    .comments .comments-slider .slick-dots{
+        margin-top: 70px;
+    }
+
+    .contacts {
+        overflow: hidden;
+        height: fit-content;
+
+        .contact-form{
+            margin-top: 20px;
+
+            .small-fields,
+            .big-field{
+                padding: 0 20px;
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home {
+        min-height: 640px;
+
+        .devices{
+            left: 0;
+        }   
+    }
+
+    .get-theme .get-theme-buttons .btn:first-child{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    :root{
+        font-size: 14px; 
+    }
+    
+    .container,
+    header.navbar{
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .home .home-info{
+        margin: 0;
+    }
+
+    .home .home-info .home-buttons,
+    .get-theme .get-theme-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn:first-child{
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+}

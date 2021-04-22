@@ -1,0 +1,124 @@
+.pricings{
+    padding-top: 39px;
+    padding-bottom: 32px;
+
+    .pricing-container{
+        padding-top: 35px;
+
+        .col-12:not(:first-child){
+            .pricing-body .pricing-description{
+                margin-left: 15px;
+            }
+
+            .pricing-item .pricing-body .btn{
+                margin-left: 2px;
+            }
+        }
+    }
+
+    .pricing-item{
+        text-align: center;
+        border-radius: 0;
+        margin: 30px 0;
+        margin-left: -2px;
+        cursor: pointer;
+
+        .card-header{
+            background-color: inherit;
+            padding-bottom: 14px;
+        }
+
+        .pricing-title{
+            font-size: 1.5rem;
+            line-height: 1.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $black-a1;
+            padding-top: 14px;
+            transition: color .15s;
+        }
+
+        .pricing-value{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 19px;
+            padding-bottom: 34px;
+            transition: background-color .15s;
+
+            var{
+                font-size: 3.75rem;
+                font-weight: 600;
+                color: $black-a1;
+                font-style: normal;
+                margin-left: -4px;
+                margin-top: -1px;
+                transition: color .15s;
+
+                .pricing-currency{
+                    display: inline-block;
+                    font-size: 1.75rem;
+                    top: -1.125rem;
+                }
+            }
+
+            .per-time{
+                font-size: 1.125rem;
+                margin-top: -1.063rem;
+                font-weight: 400;
+                color: $gray;
+                transition: color .15s;
+            }
+        }
+
+        hr{
+            margin-top: 0;
+        }
+
+        .pricing-body{
+            padding-top: 25px;
+            padding-bottom: 27px;
+
+            .pricing-description{
+                font-size: 1.125rem;
+                line-height: 1.625rem;
+                color: $gray;
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 2px;
+
+                em{
+                    font-style: normal;
+                    color: $blue;
+                }
+            }
+
+            .btn{
+                border-color: $white-e0;
+                color: $blue;
+                width: 162px;
+                height: 52px;
+                margin-top: 40px;
+            }
+        }
+
+        &:hover{
+            .pricing-title{
+                color: $blue;
+            }
+
+            .pricing-value{
+                background-color: $blue;
+                var, .per-time{
+                    color: $white-fa;
+                }
+            }
+
+            .pricing-body .btn{
+                background-color: $blue;
+                color: white;
+            }
+        }
+    }
+}

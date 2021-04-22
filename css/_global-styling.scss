@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    overflow: hidden;
+}
+
+.container{
+    padding: 0;
+    height: 100%;
+}
+
+.text-blue{
+    color: $blue;
+    font-size: 0.875rem;
+    line-height: 3.125rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+.text-description{
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: $gray;
+}
+
+.section-title{
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: $black-a1;
+}
+
+header.navbar.navbar-dark .navbar-nav a.nav-link:hover,
+.line-bottom{
+    position: relative;
+
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+        background: linear-gradient(90deg, $blue 0%, $blue 47%, rgba(0,0,0,0) 47%,rgba(0,0,0,0) 53%, $blue 53%, $blue 100%);
+    }
+}
+
+.line-bottom{
+    width: 42px;
+    margin: 35px auto;
+}
+
+.btn{
+    width: 160px;
+    height: 50px;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 3.125rem;
+    font-weight: 700;
+    color: $white;
+    border: 1px solid $gray-opacity-2;
+    text-transform: uppercase;
+
+    &:hover{
+        background-color: $blue;
+        color: $white;
+    }
+}

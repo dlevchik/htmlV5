@@ -1,0 +1,108 @@
+.comments{
+    margin-top: -1px;
+    min-height: 640px;
+    background-image: url("../img/comments_background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 42px;
+
+    .section-title{
+        color: $white;
+    }
+
+    .comments-slider{
+        padding-top: 83px;
+        margin: 0 -15px;
+        position: relative;
+
+        .slick-dots{
+            list-style: none;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 16px;
+            margin-top: 124px;
+    
+            li{
+                width: 16px;
+                height: 16px;
+                padding: 5px;
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+    
+                button{
+                    display: none;
+                }
+                   
+                &::before{ 
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    top: 25%;
+                    left: 25%;
+                    transition: color .3s;
+                    background-color: transparent;
+                    border: 1px solid $gray-opacity-2;
+                    border-radius: 50%;
+                    transition: background-color .3s;
+                }
+    
+                &.slick-active::before{
+                    width: 14px;
+                    height: 14px;
+                    background-color: $white;
+                    top: 0;
+                    left: 0;
+                }
+
+                &:not(:last-child){
+                    margin-right: 14px;
+                }
+            }
+        }
+
+        .comment{
+            color: $white;
+            max-width: 50%;
+            padding: 0 15px;
+
+            .comment-message{
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-style: italic;
+                margin-bottom: 18px;
+                margin-left: -1px;
+            }
+
+            .author{
+                font-style: normal;
+                margin-top: 22px;
+                margin-left: -1px;
+
+                .author-info{
+                    margin-left: 25px;
+
+                    .name{
+                        margin-top: -2px;
+                        line-height: 1.75rem;
+                    }
+
+                    .position{
+                        font-size: 0.875rem;
+                        line-height: 1.625rem;
+                        font-weight: 700;
+                        margin-top: -1px;
+                    }
+                }
+                
+            }
+        }
+
+
+    }
+}

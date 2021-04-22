@@ -1,0 +1,69 @@
+.every-device{
+    padding-top: 65px;
+    padding-bottom: 20px;
+
+    .devices{
+        padding-top: 1px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+
+    .every-device-info{
+        margin-top: 34px;
+
+
+        .section-title{
+           margin: 0;
+        }
+
+        .line-bottom{
+            margin: 31px 0;
+        }
+        
+        .text-description{
+            width: 85%;
+            margin: 0;
+            margin-top: -10px;
+        }
+
+        ul.details{
+            margin-top: 25px;
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: normal;
+            color: $black-b1;
+
+            li.icon{
+                position: relative;
+
+                &::before{
+                    content: "";
+                    background-image: url("../img/details-icons.png");
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    width: 1rem;
+                    height: 1rem;
+                    margin-right: 9px;
+                }
+
+                &.icon-cup::before {
+                    background-position: -5px -4px;
+                }
+
+                &.icon-energy::before {
+                    background-position: -29px -4px;
+                }
+
+                &.icon-mouse::before {
+                    background-position: -50px -5px;
+                }
+
+                &.icon-speedometer::before {
+                    background-position: -72px -4px;
+                }
+            }
+        }
+    }
+}
